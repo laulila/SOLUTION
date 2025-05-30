@@ -1,0 +1,154 @@
+/* Scroll suave para anclas */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e6f2ff;
+    /* azul muy claro */
+    color: #003366;
+}
+
+
+/* Header */
+
+header {
+    background-color: #0059b3;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* NAVBAR sticky */
+
+nav {
+    background-color: #004080;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0066cc;
+}
+
+
+/* Main */
+
+main {
+    background-color: #cce6ff;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sections */
+
+section {
+    background-color: #99ccff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    color: #00264d;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+
+/* Banner */
+
+#banner {
+    background-image: linear-gradient(to right, #0073e6, #66b3ff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#banner h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+/* Noticias */
+
+#noticias {
+    background-color: #cce0ff;
+    padding: 30px;
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#noticias h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#noticias article {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #99bbff;
+}
+
+#noticias article h3 {
+    color: #004080;
+    margin-bottom: 5px;
+}
