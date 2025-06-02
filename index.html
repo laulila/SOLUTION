@@ -1,72 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WEB SOLUTION - Tu negocio en la web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WEB SOLUTION - Tu negocio en la web</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <h1>Bienvenidos a WEB SOLUTION</h1>
-    </header>
+  <header>
+    <h1>Bienvenidos a WEB SOLUTION</h1>
+  </header>
 
-    <!-- NAVBAR con navegación interna -->
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-<!-- Banner principal -->
-<section id="banner">
+  <!-- NAVBAR -->
+  <nav>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- BANNER -->
+  <section id="banner">
     <h2>¡Impulsá tu negocio hoy!</h2>
     <p>Diseñamos tu sitio web profesional con estilo y funcionalidad.</p>
-</section>
+  </section>
 
-    <main id="inicio">
-        <p>SI TU NEGOCIO NO ESTÁ EN LA WEB, NO EXISTE</p>
-    </main>
+  <!-- SECCIONES -->
+  <main id="inicio">
+    <p>SI TU NEGOCIO NO ESTÁ EN LA WEB, NO EXISTE</p>
+  </main>
 
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <p>Diseño web profesional, marketing digital y posicionamiento online.</p>
-    </section>
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <p>Diseño web profesional, marketing digital y posicionamiento online.</p>
+  </section>
 
-    <section id="nosotros">
-        <h2>Nosotros</h2>
-        <p>Somos un equipo de expertos comprometidos con el éxito de tu negocio en internet.</p>
-    </section>
-<section id="noticias">
+  <section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>Somos un equipo de expertos comprometidos con el éxito de tu negocio en internet.</p>
+  </section>
+
+  <section id="noticias">
     <h2>Noticias</h2>
     <article>
-        <h3>🌐 Tendencias en diseño web 2025</h3>
-        <p>Los sitios adaptativos, accesibles y rápidos serán clave este año.</p>
+      <h3>🌐 Tendencias en diseño web 2025</h3>
+      <p>Los sitios adaptativos, accesibles y rápidos serán clave este año.</p>
     </article>
     <article>
-        <h3>🚀 SEO local para negocios pequeños</h3>
-        <p>Con estrategias simples podés destacar en tu ciudad.</p>
+      <h3>🚀 SEO local para negocios pequeños</h3>
+      <p>Con estrategias simples podés destacar en tu ciudad.</p>
     </article>
-</section>
+  </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
+  <section id="contacto">
+    <h2>Contacto</h2>
 
-        <form>
-         <name : nombre y apellido></name>  
-        </form>
-        <p>Podés escribirnos a contacto@websolution.com o seguirnos en redes sociales.</p>
-    </section>
+    <form>
+      <label for="nombre">Nombre y Apellido:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" />
+    </form>
 
-    <footer>
-        <p>&copy; WEB SOLUTION - Todos los derechos reservados</p>
-    </footer>
+    <p>Podés escribirnos a contacto@websolution.com o seguirnos en redes sociales.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 SOLUTION | Todos los derechos reservados</p>
+      <div class="footer-links">
+        <a href="mailto:pereyralauralila@gmail.com">
+          <i class="fas fa-envelope"></i> Contacto
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+          <i class="fab fa-tiktok"></i> TikTok
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="accesibilidad" title="Accesibilidad">
+    <i class="fas fa-universal-access"></i>
+  </div>
 </body>
 </html>
