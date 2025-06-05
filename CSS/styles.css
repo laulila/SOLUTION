@@ -14,25 +14,33 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #e6f2ff;
+    background: url("estaultima.svg") no-repeat center center fixed;
+    background-size: cover;  
     color: #003366;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 
 /* Header */
-header {
-    background-color: #0059b3;
+
+    /* Header transparente */
+header{
     color: white;
-    padding: 25px;
+    padding: 3px solid #fff;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(100px); /* Opcional: da un efecto de desenfoque detrás */
+    border-radius: 0 0 0 0 ;
+    color: #fff
 }
+
+
 
 /* NAVBAR sticky */
 nav {
-    background-color: #004080;
+    background-color: #003366;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -75,17 +83,19 @@ nav {
 }
 
 .nav-links li a:hover {
-    background-color: #0066cc;
+    background-color: #41cc00;
 }
 
 /* Banner */
 #banner {
-    background-image: linear-gradient(to right, #0073e6, #66b3ff);
-    color: white;
-    padding: 40px 20px;
+    background-color: transparent;
+    color: #fff;
+    padding: 30 px;
     text-align: center;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px;
+    backdrop-filter:  blur(2px);
+    border: 1px solid rgba(181, 42, 11, 0.3);
+
 }
 
 #banner h2 {
@@ -95,14 +105,15 @@ nav {
 
 /* Main */
 main#inicio {
-    background-color: #cce6ff;
+    background-color: transparent;
+    color: #fff;
     padding: 30px;
     text-align: center;
     font-size: 1.3rem;
     margin: 30px auto;
     max-width: 700px;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border : 1px solid rgba ( 181, 42,11,0.3);
+    box-shadow: 0 0 25px;
 }
 
 /* Sections */
