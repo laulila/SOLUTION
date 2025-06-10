@@ -1,0 +1,18 @@
+// Mostrar / ocultar panel accesibilidad
+const botonAccesibilidad = document.querySelector('.accesibilidad');
+const panelAccesibilidad = document.getElementById('panel-accesibilidad');
+
+botonAccesibilidad.addEventListener('click', () => {
+  panelAccesibilidad.style.display =
+    panelAccesibilidad.style.display === 'block' ? 'none' : 'block';
+});
+
+// Alto contraste
+document.getElementById('toggle-contraste').addEventListener('click', () => {
+  document.body.classList.toggle('alto-contraste');
+});
+
+// Aumentar texto
+document.getElementById('toggle-texto').addEventListener('click', () => {
+  document.body.classList.toggle('texto-grande');
+});

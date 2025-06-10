@@ -2,30 +2,33 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WEB SOLUTION - Tu negocio en la web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEB SOLUTION</title>
 
-  <!-- CSS -->
+  
+!-- CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 
+
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+
+  <!-- ENCABEZADO -->
   <header>
-    <h1>Bienvenidos a WEB SOLUTION</h1>
+    <h1>Bienvenidos a <span>WEB SOLUTION</span></h1>
   </header>
 
-  <!-- NAVBAR -->
+  <!-- MENÚ HAMBURGUESA -->
   <nav>
     <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">
+    <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
       <i class="fas fa-bars"></i>
     </label>
-
     <ul class="nav-links">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#servicios">Servicios</a></li>
@@ -34,97 +37,68 @@
     </ul>
   </nav>
 
-  <!-- BANNER -->
+  <!-- BANNER CON FONDO -->
   <section id="banner">
-    <h2>¡Impulsá tu negocio hoy!</h2>
-    <p>Diseñamos tu sitio web profesional con estilo y funcionalidad.</p>
+    <div class="contenido-banner">
+      <h2>Impulsá tu negocio hoy</h2>
+      <p>Diseñamos sitios accesibles, modernos y funcionales.</p>
+    </div>
   </section>
 
-  <!-- SECCIONES -->
-  <main id="inicio">
-    <p>SI TU NEGOCIO NO ESTÁ EN LA WEB, NO EXISTE</p>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section id="inicio">
+      <p class="frase-impacto">"Si tu negocio no está en la web, no existe."</p>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <p>Ofrecemos diseño web, marketing digital y posicionamiento SEO local.</p>
+    </section>
+
+    <section id="nosotros">
+      <h2>Nosotros</h2>
+      <p>Somos un equipo apasionado por la tecnología y el diseño.</p>
+      <h3>Conocé a nuestros programadores:</h3>
+      <dl>
+        <dt>Fabio Daniel Segura</dt>
+        <dd>
+          Desarrollador web apasionado por crear experiencias digitales accesibles y modernas. Especialista full stack con más de 10 años de experiencia.
+        </dd>
+
+        <dt>Laura Pereyra</dt>
+        <dd>
+          Programadora Full Stack enfocada en soluciones limpias y usables. Experiencia en JavaScript, React, Node.js, Express y PostgreSQL. Creativa, humana y comprometida.
+        </dd>
+
+        <dt>Agustín Iván García</dt>
+        <dd>
+          Programador en formación con pasión por el desarrollo web. Aprende activamente HTML, CSS, JavaScript, React y Node.js.
+        </dd>
+      </dl>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Escribinos a <a href="mailto:contacto@websolution.com">contacto@websolution.com</a></p>
+    </section>
   </main>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <p>Diseño web profesional, marketing digital y posicionamiento online.</p>
-  </section>
-
-  <section id="nosotros">
-    <h2>Nosotros</h2>
-    <p>Somos un equipo de expertos comprometidos con el éxito de tu negocio en internet.</p>
-    <h2>A continuacion nuestros programadores</h2>
-   <ul class="ul">
-        <dl><dt>Fabio Daniel Segura</dt><dd>¡Hola! Soy Fabio Daniel Segura, desarrollador web con pasión por crear experiencias digitales modernas, eficientes y accesibles. Me especializo en el desarrollo [front-end / back-end / full stack], combinando diseño intuitivo con código limpio y funcional.
-
-Con más de 10 años de experiencia, he trabajado en proyectos para empresas, startups y clientes independientes, siempre buscando la mejor solución tecnológica para cada necesidad. Me gusta mantenerme actualizado con las últimas tendencias en desarrollo web y participar activamente en la comunidad tech. </dd></dl>
-
-     </ul>
-     <ul class="ul">
-        <dl><dt>Laura pereyra</dt><dd>Programadora Full Stack | Apasionada por la tecnología, el diseño limpio y las soluciones eficientes
-¡Hola! Soy Laura Pereira, programadora Full Stack con experiencia en el desarrollo de aplicaciones web robustas, escalables y con una excelente experiencia de usuario. Me especializo en tecnologías como JavaScript, React, Node.js, Express, MongoDB y PostgreSQL, entre otras.
-
-Combino habilidades de frontend y backend para crear soluciones completas que no solo funcionan, sino que también se ven bien. Me encanta resolver problemas, optimizar procesos y trabajar en equipo para llevar ideas a la realidad.</dd></dl>
-     </ul>
-     <ul class="ul">
-        <dl><dt>Agustin Ivan Garcia</dt><dd>Hola! Soy Agustín García, programador en formación con muchas ganas de crecer en el mundo del desarrollo web. Me estoy iniciando en el camino del desarrollo Full Stack, y actualmente estoy fortaleciendo mis habilidades en HTML, CSS, JavaScript y React, además de comenzar a explorar el lado del backend con Node.js y bases de datos.
-
-Me apasiona la tecnología, el aprendizaje constante y la posibilidad de crear soluciones útiles desde cero. Aunque estoy dando mis primeros pasos, tengo una gran actitud, curiosidad y compromiso con cada proyecto en el que participo.</dd></dl>
-     </ul>
-  </section>
-
-  <section id="noticias">
-    <h2>Noticias</h2>
-    <article>
-      <h3>🌐 Tendencias en diseño web 2025</h3>
-      <p>Los sitios adaptativos, accesibles y rápidos serán clave este año.</p>
-    </article>
-    <article>
-      <h3>🚀 SEO local para negocios pequeños</h3>
-      <p>Con estrategias simples podés destacar en tu ciudad.</p>
-    </article>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-
-    <form class="form">
-      <label for="nombre">Nombre y Apellido:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" />
-      Genero<select>
-        <option>hombre</option>
-        <option>mujer</option>
-        <option>trans</option>
-        Consulta
-        <textarea name="consulta"></textarea> <br/><br/>
-        <input type="submit" value="Enviar"/>
-      </select>
-      
-    </form>
-
-    <p>Podés escribirnos a contacto@websolution.com o seguirnos en redes sociales.</p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2025 SOLUTION | Todos los derechos reservados</p>
-      <div class="footer-links">
-        <a href="mailto:pereyralauralila@gmail.com">
-          <i class="fas fa-envelope"></i> Contacto
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.tiktok.com" target="_blank">
-          <i class="fab fa-tiktok"></i> TikTok
-        </a>
-      </div>
-    </div>
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 WEB SOLUTION | Todos los derechos reservados</p>
   </footer>
 
-  <div class="accesibilidad" title="Accesibilidad">
+  <!-- PANEL DE ACCESIBILIDAD (visible solo con CSS por ahora) -->
+  <div id="panel-accesibilidad">
+    <button id="toggle-contraste">Alto Contraste</button>
+    <button id="toggle-texto">Aumentar Texto</button>
+  </div>
+
+  <!-- BOTÓN DE ACCESIBILIDAD (muñequito parado) -->
+  <div class="accesibilidad" tabindex="0" role="button" aria-label="Opciones de accesibilidad">
     <i class="fas fa-universal-access"></i>
   </div>
+
 </body>
 </html>
